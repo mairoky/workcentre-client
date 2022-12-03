@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { Toaster } from 'react-hot-toast';
+import AnimatedCursor from 'react-animated-cursor'
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
+import { router } from './routes/Routes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <RouterProvider router={router}></RouterProvider>
+      <AnimatedCursor
+        color="255,255,255"
+        innerSize={12}
+        outerSize={40}
+        innerScale={1}
+        outerScale={1.7}
+        outerAlpha={0}
+        outerStyle={{
+          border: '2px solid #fff'
+        }}></AnimatedCursor>
+      <Toaster></Toaster>
+    </>
   );
 }
 
