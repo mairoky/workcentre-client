@@ -1,0 +1,83 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
+/* General CSS */
+:root {
+    --primary-color: #f0f0f0;
+    --secondary-color: #1c1c1c;
+    --font-color: #121212;
+    --tan: #cebb85;
+    --tuatara: #3c3c3a;
+    --tobacco-brown: #706345;
+    --granite-green: #8c8c6d;
+    --hemlock: #535438;
+    --gray: #848484;
+    --tundora: #4c4c4c;
+    --rangitoto: #343c24;
+    --transition: all 0.4s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: var(--tobacco-brown);
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: var(--primary-color);
+    font-family: 'Roboto Mono', monospace;
+    color: var(--font-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+    overflow: hidden;
+}
+
+.btn-general {
+    padding: 0.7rem 1.7rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: var(--transition);
+    border: 1px solid var(--secondary-color);
+    border-radius: 50px;
+}
+
+.btn-general:hover,
+.btn-general:active,
+.btn-general:focus {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-color: var(--primary-color);
+}
+
+.btn-general-outline {
+    padding: 0.7rem 1.7rem;
+    background-color: transparent;
+    color: var(--primary-color);
+    transition: var(--transition);
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+}
+
+.btn-general-outline:hover,
+.btn-general-outline:active,
+.btn-general-outline:focus {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
