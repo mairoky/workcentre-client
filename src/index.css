@@ -46,7 +46,16 @@ body {
 }
 
 section {
+    background: #fff;
     overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .btn-general {

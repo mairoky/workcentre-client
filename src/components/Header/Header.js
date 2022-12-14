@@ -9,7 +9,7 @@ import './Header.css';
 const Header = () => {
     return (
         <header>
-            <Navbar collapseOnSelect expand="lg">
+            <Navbar collapseOnSelect expand="lg" variant='dark'>
                 <Container>
                     <Navbar.Brand href="#home">Work Centre</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
